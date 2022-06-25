@@ -1,0 +1,103 @@
+.main-color {
+  color: #000000f2;
+}
+
+:root {
+  --mainComlor: #000000f2;
+}
+
+body {
+  background-color: var(--mainComlor);
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+/* start slideBar */
+.rightSide {
+  height: 100vh;
+  width: 60px;
+  background-color: white;
+}
+.left-side {
+  width: 0px;
+}
+.left-side li a {
+  text-decoration: none;
+  color: white;
+}
+
+.rightSide ul li img {
+  width: 30px;
+}
+
+.left-side ul li {
+  margin: 20px 0px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.5s;
+
+  display: none;
+}
+.social-icons,
+.copyRight {
+  display: none;
+}
+
+.left-side li a:hover,
+.social-icons i:hover {
+  color: red;
+  cursor: pointer;
+}
+.social-icons i {
+  transition: all 0.2s;
+}
+
+.fa-bars,
+.fa-xmark {
+  cursor: pointer;
+}
+.fa-xmark {
+  display: none;
+}
+
+.left-side-footer {
+  position: absolute;
+  bottom: 0;
+}
+.copyRight {
+  width: 50%;
+  font-weight: 300;
+  transition: all 2s;
+}
+.sideBar {
+  background-color: black;
+  position: fixed;
+  z-index: 9909999;
+}
+
+/* end slideBar */
+.form-control {
+  padding: 15px;
+  text-align: center;
+  background-color: transparent !important;
+  border: none;
+  border-bottom: white 1px solid;
+}
+
+/* dsiplay of movies details */
+.layer {
+  position: absolute;
+  top: 100%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 2s;
+}
+
+.movie {
+  overflow: hidden;
+}
+
+.movie:hover .layer {
+  top: 1.5%;
+}
+/* dsiplay of movies details */

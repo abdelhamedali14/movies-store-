@@ -1,0 +1,76 @@
+@media screen and (max-width: 500px) {
+    #search-1,#search-2{
+      position: relative;
+        text-align: center;
+        font-size: 5px;
+        width: 70%;
+        left: 23%;
+    }
+    .form-control{
+
+        position: relative;
+        text-align: center;
+      
+        width: 70%;
+        left: 23%;
+
+    }
+    #contactheader{
+        text-align: center;
+      position: relative;
+       
+    }
+#submitBtn{
+
+    text-align: center;
+    position: relative;
+    left: 50%;
+    
+}
+
+/* .movie,.layer{
+    position: relative;
+    left: 5%;
+   width:80%;
+    text-align: center;
+
+
+} */
+  }
+  
+
+  
+  
+  @media screen and (min-width: 501px) and (max-width: 991px) {
+
+    #search-1,#search-2{
+        position: relative;
+          text-align: center;
+          font-size: 5px;
+          width: 70%;
+          left: 23%;
+      }
+      .form-control{
+  
+          position: relative;
+          text-align: center;
+        
+          width: 90%;
+          left: 10%;
+  
+      }
+      #contactheader{
+          text-align: center;
+        position: relative;
+        left: 5%;
+      }
+  #submitBtn{
+  
+      text-align: center;
+      position: relative;
+      left: 48%;
+  
+
+
+  }
+}

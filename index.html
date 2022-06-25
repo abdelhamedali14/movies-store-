@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawsome file  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap file  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- animate file  -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- custom file  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>movies store</title>
+</head>
+
+<body>
+    <!-- start sideBar  -->
+    <div class="sideBar d-flex " id="sideNav">
+        <div class="left-side   h-100 ">
+            <ul class="list-unstyled mx-5 mt-2">
+
+                <li  data-wow-duration="7s" class="wow bounceInUp "> <a class="link"
+                        >now_playing</a></li>
+                <li data-wow-duration="6s" class="wow bounceInUp "><a class="link" >popular</a>
+                </li>
+                <li  data-wow-duration="4s" class="wow bounceInUp "><a class="link" >top_rated</a>
+                </li>
+                <li  data-wow-duration="3s" class="wow bounceInUp "><a id="trending" class="link" >Trending</a>
+                </li>
+                <li  data-wow-duration="2s" class="wow bounceInUp  "><a class="link" >upcoming</a>
+                </li>
+                <li data-wow-duration="1s" class="wow bounceInUp "><a  a class="link" href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="left-side-footer p-3 ">
+                <div class="social-icons  pt-3 p-3 mx-2 text-white">
+                    <i class="fa-brands fa-facebook mx-2 wow bounceInUp " data-wow-duration="7s"></i>
+                    <i class="fa-brands fa-twitter  mx-2  wow bounceInUp" data-wow-duration="7s"></i>
+                    <i class="fa fa-globe  mx-2 wow bounceInUp " data-wow-duration="7s"></i>
+                </div>
+                <div class="copyRight pt-3 mx-2 text-white  ">
+                    <p> Copyright © 2022 Designed by abdelhamed ali. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+        <div class="rightSide bg-white  ">
+            <ul class="list-unstyled py-5 vh-100 d-flex flex-column justify-content-between align-items-center">
+
+                <li><img src="images/logo.png" alt=""> </li>
+                <div>
+                    <li> <i class="fa-solid fa-xmark fs-2 "></i></li>
+                    <li><i class="fa-solid fa-bars fs-2"></i></li>
+                </div>
+                <div class="icons">
+                    <li><i class="fa-solid fa-globe"></i></li>
+                    <li><i class="fa-solid fa-share-nodes mt-2"></i></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!-- end sideBar -->
+    <!--  start home section -->
+    <section id="home" class="pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group" id="search-1">
+                        <input id="getMovieByWord" class="form-control  " placeholder="get movies by word...">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group" id="search-2">
+                        <input class="form-control bg-transparent "  id="getByWord" placeholder="search...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  end home section -->
+    
+
+
+
+<!--  start display movie  section  -->
+    <section class=" my-5 py-5">
+        <div class="container">
+            <div class="row " id="rowData">
+                <div class="col-md-4">
+                    <div class="movie text-center position-relative ">
+                        <img src="" alt="" class="poterMovie w-100">
+                        <div
+                            class="layer  position-absolute d-flex flex-column justify-content-center align-items-center text-black">
+                            <h4></h4>
+                            <p></p>
+                            <h4></h4>
+                            <p></p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+<!--  end display movie  section  -->
+
+
+    <!--  start contact section -->
+    <footer>
+        <div id="contact">
+            <div class="container">
+                <div class="row ">
+                    <h2 class="text-white py-2" id="contactheader">ContacUs...</h2>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input id="nameInput" class="form-control" placeholder="Enter Your Name">
+                            <div class="alert alert-danger d-none" id="nameAlert" role="alert">
+                                Your Name is not valid
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input id="emailInput" class="form-control " placeholder="Enter Email"">
+                <div class=" alert alert-danger d-none" id="emailAlert" role="alert">
+                            ex@yahoo.com
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input id="phoneInput" class="form-control  " placeholder="Enter phone">
+                        <div class="alert alert-danger d-none" id="phoneAlert" role="alert">
+                            entre valid phone
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input id="ageInput" class="form-control " placeholder="Enter age">
+                        <div class="alert alert-danger d-none" id="ageAlert" role="alert">
+                            +16 only
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input id="passwordInput" class="form-control  " type="password" placeholder="Enter password">
+                        <div class="alert alert-danger d-none" id="passwordAlert" role="alert">
+                            you must strength password Minimum eight characters, at
+                            least one letter and one number </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input id="rePasswordInput" class="form-control  " type="password"
+                            placeholder="enter RePassword">
+                        <div class="alert alert-danger d-none" id="repasswordAlert" role="alert">
+                            please write your password agin here
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button disabled id="submitBtn" class="btn btn-outline-danger my-4 "> submit</button>
+        </div>
+
+        </div>
+
+    </footer>
+    <!--  end contact section -->
+
+
+
+    <!-- bootstrap js file  -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- jquery js file  -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+     <!-- wow js file  -->
+    <script src="js/wow.min.js"></script>
+     <!-- main js file  -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
